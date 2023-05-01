@@ -1,0 +1,122 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.nav .subjects,
+.nav .drive {
+  display: inline-block;
+  background-color: #f0d500;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.nav .subjects:hover,
+.nav .drive:hover {
+  background-color: #ffe100;
+}
+
+.nav .deadline {
+  display: inline-block;
+  background-color: #f32013;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.nav .deadline:hover {
+  background-color: #9b1009;
+}
+.icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: blueviolet;
+  position: relative;
+}
+.nav-mobile {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  background-color: rgb(158, 89, 223);
+  text-align: right;
+  padding: 0 1rem;
+  display: none;
+}
+.nav-mobile li a {
+  display: block;
+  color: white;
+  margin-top: 1rem;
+}
+.nav-mobile li:not(:last-child) {
+  padding: 0.5rem;
+
+  border-bottom: 1px solid #ececec;
+}
+.nav-mobile li a:last-child {
+  margin-bottom: 1rem;
+}
+.nav-mobile .subjects,
+.nav-mobile .drive {
+  display: inline-block;
+  background-color: #f0d500;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.nav-mobile .subjects:hover,
+.nav-mobile .drive:hover {
+  background-color: #ffe100;
+}
+.nav-mobile .deadline {
+  display: inline-block;
+  background-color: #f32013;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.nav-mobile .deadline:hover {
+  background-color: #9b1009;
+}
+.farsh a,
+.nav-mobile .farsh a {
+  background-color: rgb(87, 76, 76) !important;
+  color: #bad9e0 !important;
+  transition: 0.7s ease;
+}
+.farsh a:hover,
+.nav-mobile .farsh a:hover {
+  background-color: rgb(27, 26, 26) !important;
+}
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+  .navbar {
+    margin-bottom: 1rem;
+  }
+  .icon {
+    display: block;
+  }
+  .nav-mobile {
+    display: block;
+  }
+}

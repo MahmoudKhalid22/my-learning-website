@@ -1,0 +1,66 @@
+.measure {
+  background-color: #f32013;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  padding-bottom: 2rem;
+  /* color: #ececec; */
+}
+.measure h3 {
+  font-size: 2.5rem;
+}
+.measure .info {
+  display: block;
+  font-size: 2rem;
+}
+
+.measure .info span {
+  display: block;
+  font-size: 1.5rem;
+  color: blanchedalmond;
+}
+.date {
+  font-size: 3rem;
+}
+.toWhom {
+  font-size: 1.25rem;
+}
+
+.sheet {
+  /* display: block; */
+  width: 100%;
+  background-color: #f0d500;
+  text-align: center;
+  border-radius: 1rem;
+  color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3 ease;
+}
+.sheet:hover {
+  background-color: #ffe100;
+}
+@media (max-width: 544px) {
+  .measure h3 {
+    font-size: 1.5rem;
+  }
+  .measure .info {
+    display: block;
+    font-size: 1rem;
+  }
+
+  .measure .info span {
+    display: block;
+    font-size: 0.5rem;
+  }
+  .date {
+    font-size: 2rem;
+  }
+  .sheet {
+    font-size: 1rem;
+  }
+}

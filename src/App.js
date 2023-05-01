@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import "./App.css";
+import Collection from "./components/Deadline/collection/Collection";
+import Measurements from "./components/Deadline/Measurements/Measurements";
+import Organization from "./components/Deadline/Organization/Organization";
+import Navbar from "./components/Navbar/Navbar";
+import CollectionS from "./components/Subjects/collectionSubjects/CollectionS";
+
+const router = createBrowserRouter([
+  { path: "/deadline", element: <Collection /> },
+  { path: "/subjects", element: <CollectionS /> },
+]);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div id="#deadline" className="d">
+        <RouterProvider router={router} />
+      </div>
     </div>
   );
 }

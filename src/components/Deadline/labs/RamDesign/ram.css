@@ -1,0 +1,25 @@
+.ram {
+  background-color: #f32013;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+}
+.one {
+  background-color: #f0d500;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  transition: 0.7s ease;
+}
+.one a {
+  display: block;
+}
+.one:hover {
+  background-color: #ffe100;
+}
+.toWhom {
+  font-size: 1.75rem !important;
+  color: white;
+}
