@@ -1,0 +1,24 @@
+.container {
+  text-align: right;
+}
+.container ol li {
+  border: 1px solid #000;
+  padding: 1rem;
+}
+.home {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #000;
+  display: inline-block;
+}
+@media (min-width: 767px) {
+  .container h1 {
+    font-size: 3rem;
+  }
+  .container ol li {
+    font-size: 2rem;
+  }
+  .container p {
+    font-size: 2.5rem;
+  }
+}

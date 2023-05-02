@@ -48,11 +48,11 @@
 }
 .nav-mobile {
   position: absolute;
-  top: 2rem;
+  top: 3rem;
   right: 3rem;
   background-color: rgb(158, 89, 223);
   text-align: right;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   display: none;
 }
 .nav-mobile li a {
@@ -105,6 +105,9 @@
 .farsh a:hover,
 .nav-mobile .farsh a:hover {
   background-color: rgb(27, 26, 26) !important;
+}
+.home {
+  display: block;
 }
 @media (max-width: 767px) {
   .nav {

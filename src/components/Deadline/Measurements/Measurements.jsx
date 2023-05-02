@@ -36,6 +36,13 @@ function Measurements() {
       >
         sheet 4
       </a>
+      <a
+        className="solution"
+        href="https://drive.google.com/file/d/1BfCOuTmkQwhO_CYmuN6l4FAors4jR-fy/view?usp=drive_open"
+        target={"_blank"}
+      >
+        my solution
+      </a>
     </div>
   );
 }

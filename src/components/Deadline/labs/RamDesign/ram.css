@@ -23,3 +23,11 @@
   font-size: 1.75rem !important;
   color: white;
 }
+@media (max-width: 544px) {
+  .one {
+    font-size: 1rem;
+  }
+  .toWhom {
+    font-weight: 1rem !important;
+  }
+}
