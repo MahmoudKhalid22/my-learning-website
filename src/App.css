@@ -3,7 +3,14 @@ html {
   margin: 0;
   scroll-behavior: smooth;
 }
-
+/* 
+  MAIN COLOR:
+  COLOR: #343a40
+*/
+body {
+  color: #343a40;
+  background-color: #082f49;
+}
 a {
   text-decoration: none;
 }
