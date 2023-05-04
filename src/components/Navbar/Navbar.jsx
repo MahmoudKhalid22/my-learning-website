@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./navbar.css";
 // import { AiOutlineMenu } from "react-icons/Ai";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaBookOpen } from "react-icons/fa";
+import { FiAlertTriangle } from "react-icons/fi";
+
 import logo from "../../assets/logo.jpg";
 
 function Navbar() {
@@ -18,22 +20,25 @@ function Navbar() {
         </a>
       </div>
       <ul className="nav">
-        <li className="home">
-          <a href="/">Home</a>
+        <li>
+          <a href="/" className="home">
+            Home
+          </a>
         </li>
         <li className="farsh">
           <a
             href="https://drive.google.com/open?id=13aGUbeGPWiGNYs_r6mjEk8BXdfF5ufxF&authuser=0"
-            className="drive"
+            className="nav-link quraat"
             target={"_blank"}
           >
             فرش حروف الإمام عاصم
           </a>
+          <FaBookOpen className="open" />
         </li>
         <li>
           <a
             href="https://drive.google.com/drive/folders/1IAjLZr76U-oMvTLDGpvvBXjl2pYGFmVz"
-            className="drive"
+            className="nav-link drive"
             target={"_blank"}
           >
             Drive 1
@@ -42,21 +47,22 @@ function Navbar() {
         <li>
           <a
             href="https://drive.google.com/drive/folders/1ZAstJ9wz1shqdJPGZ7nO_ioAc8gV7z9r"
-            className="drive"
+            className="nav-link drive"
             target={"_blank"}
           >
             Drive 2
           </a>
         </li>
         <li>
-          <a href="/subjects" className="subjects">
+          <a href="/subjects" className="nav-link subjects">
             Subjects
           </a>
         </li>
-        <li>
-          <a className="deadline" href="/deadline">
+        <li className="hurry">
+          <a className="nav-link deadline" href="/deadline">
             Deadline. Hurry!
           </a>
+          <FiAlertTriangle className="alert" />
         </li>
       </ul>
       <div className="icon">
@@ -65,12 +71,14 @@ function Navbar() {
       {menu && (
         <ul className="nav-mobile">
           <li className="home">
-            <a href="/">Home</a>
+            <a href="/" className="nav-link home">
+              Home
+            </a>
           </li>
           <li className="farsh">
             <a
               href="https://drive.google.com/open?id=13aGUbeGPWiGNYs_r6mjEk8BXdfF5ufxF&authuser=0"
-              className="drive"
+              className="nav-link quraat"
               target={"_blank"}
             >
               فرش حروف الإمام عاصم
@@ -79,7 +87,7 @@ function Navbar() {
           <li>
             <a
               href="https://drive.google.com/drive/folders/1IAjLZr76U-oMvTLDGpvvBXjl2pYGFmVz"
-              className="drive"
+              className="nav-link drive"
               target={"_blank"}
             >
               Drive 1
@@ -88,20 +96,21 @@ function Navbar() {
           <li>
             <a
               href="https://drive.google.com/drive/folders/1ZAstJ9wz1shqdJPGZ7nO_ioAc8gV7z9r"
-              className="drive"
+              className="nav-link drive"
               target={"_blank"}
             >
               Drive 2
             </a>
           </li>
           <li>
-            <a href="/subjects" className="subjects">
+            <a href="/subjects" className="nav-link subjects">
               Subjects
             </a>
           </li>
           <li>
-            <a className="deadline" href="/deadline">
+            <a className="nav-link deadline hurry" href="/deadline">
               Deadline. Hurry!
+              <FiAlertTriangle className="alert" />
             </a>
           </li>
         </ul>

@@ -43,8 +43,8 @@ function Collection() {
         {activeButton === "button1" && <Measurements />}
         {activeButton === "button1" && <Organization />}
         {/* لم يسلم */}
-        {activeButton === "button2" && <RamDesign />}
-        {activeButton === "button2" && <Embedded />}
+        {activeButton === "button1" && <RamDesign />}
+        {activeButton === "button1" && <Embedded />}
         {activeButton === "button2" && <DSP />}
         {activeButton === "button2" && <Interrupt />}
       </div>
