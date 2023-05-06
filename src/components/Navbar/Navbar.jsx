@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 // import { AiOutlineMenu } from "react-icons/Ai";
 import { FaBars, FaBookOpen } from "react-icons/fa";
@@ -21,19 +22,19 @@ function Navbar() {
       </div>
       <ul className="nav">
         <li>
-          <a href="/" className="home">
+          <Link to={`/`} className="nav-link home">
             Home
-          </a>
+          </Link>
         </li>
-        <li className="farsh">
+        <li>
           <a
             href="https://drive.google.com/open?id=13aGUbeGPWiGNYs_r6mjEk8BXdfF5ufxF&authuser=0"
-            className="nav-link quraat"
             target={"_blank"}
+            className="nav-link quraat"
           >
             فرش حروف الإمام عاصم
+            <FaBookOpen className="open" />
           </a>
-          <FaBookOpen className="open" />
         </li>
         <li>
           <a
@@ -54,15 +55,15 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href="/subjects" className="nav-link subjects">
+          <Link to={`/subjects`} className="nav-link subjects">
             Subjects
-          </a>
+          </Link>
         </li>
-        <li className="hurry">
-          <a className="nav-link deadline" href="/deadline">
+        <li>
+          <Link className="nav-link deadline" to="/deadline">
             Deadline. Hurry!
-          </a>
-          <FiAlertTriangle className="alert" />
+            <FiAlertTriangle className="alert" />
+          </Link>
         </li>
       </ul>
       <div className="icon">
@@ -71,9 +72,9 @@ function Navbar() {
       {menu && (
         <ul className="nav-mobile">
           <li className="home">
-            <a href="/" className="nav-link home">
+            <Link to="/" className="nav-link home">
               Home
-            </a>
+            </Link>
           </li>
           <li className="farsh">
             <a
@@ -103,15 +104,15 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="/subjects" className="nav-link subjects">
+            <Link to="/subjects" className="nav-link subjects">
               Subjects
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="nav-link deadline hurry" href="/deadline">
+            <Link className="nav-link deadline hurry" to="/deadline">
               Deadline. Hurry!
               <FiAlertTriangle className="alert" />
-            </a>
+            </Link>
           </li>
         </ul>
       )}

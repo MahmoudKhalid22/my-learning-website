@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbar from "../../Navbar/Navbar";
 import DSP from "../labs/DSP/DSP";
 import Embedded from "../labs/Embedded/Embedded";
 import Interrupt from "../labs/Interrupt/Interrupt";
@@ -22,6 +23,7 @@ function Collection() {
 
   return (
     <>
+      <Navbar />
       <div className="buttons flex">
         <button
           onClick={() => handleButtonClick("button1")}

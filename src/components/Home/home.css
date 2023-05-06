@@ -14,16 +14,22 @@
   flex-direction: column;
   /* margin-top: 5rem; */
 }
+.container p {
+  padding: 1rem;
+  background-color: #66ff66;
+  font-weight: bold;
+}
 .container ol li {
   border: 1px solid #000;
   padding: 1rem;
 }
-.home {
+/* .home {
   font-weight: 600;
   font-size: 1.25rem;
   color: #000;
   display: inline-block;
-}
+  color: #fdfdfd;
+} */
 @media (min-width: 767px) {
   .container h1 {
     font-size: 3rem;
