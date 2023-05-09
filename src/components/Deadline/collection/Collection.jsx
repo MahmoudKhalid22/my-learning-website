@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import Navbar from "../../Navbar/Navbar";
+import Communication from "../communication/Communication";
 import DSP from "../labs/DSP/DSP";
 import Embedded from "../labs/Embedded/Embedded";
 import Interrupt from "../labs/Interrupt/Interrupt";
 import RamDesign from "../labs/RamDesign/RamDesign";
 import Measurements from "../Measurements/Measurements";
 import Organization from "../Organization/Organization";
+import OS from "../os/OS";
 import "./collection.css";
 
 function Collection() {
@@ -23,7 +25,6 @@ function Collection() {
 
   return (
     <>
-      <Navbar />
       <div className="buttons flex">
         <button
           onClick={() => handleButtonClick("button1")}
@@ -44,11 +45,13 @@ function Collection() {
         {/* تم تسليمه */}
         {activeButton === "button1" && <Measurements />}
         {activeButton === "button1" && <Organization />}
-        {/* لم يسلم */}
         {activeButton === "button1" && <RamDesign />}
         {activeButton === "button1" && <Embedded />}
+        {/* لم يسلم */}
         {activeButton === "button2" && <DSP />}
         {activeButton === "button2" && <Interrupt />}
+        {activeButton === "button2" && <Communication />}
+        {activeButton === "button2" && <OS />}
       </div>
     </>
   );

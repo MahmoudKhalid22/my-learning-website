@@ -1,11 +1,12 @@
 /* 
   MAIN COLOR: #fdfdfd
+  SECOND COLOR: #343a40;
 */
 
 .container {
   text-align: right;
-  background-color: #fdfdfd;
-  color: #343a40;
+  /* background-color: #fdfdfd; */
+  color: #fdfdfd;
   padding: 0.5rem;
   border-radius: 1rem;
   display: flex;
@@ -17,11 +18,16 @@
 .container p {
   padding: 1rem;
   background-color: #66ff66;
+  color: #343a40;
   font-weight: bold;
 }
 .container ol li {
-  border: 1px solid #000;
+  border: 1px solid #fdfdfd;
   padding: 1rem;
+  color: #fdfdfd;
+}
+.container ol li:not(:last-of-type) {
+  border-bottom: 0;
 }
 /* .home {
   font-weight: 600;

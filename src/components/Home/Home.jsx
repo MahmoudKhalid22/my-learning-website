@@ -1,11 +1,9 @@
 import React from "react";
 import "./home.css";
-import Navbar from "../Navbar/Navbar";
 
 function Home() {
   return (
     <div>
-      <Navbar />
       <div className="container">
         <h1>أهلا بك في موقع جامعتك نرجو لك رحلة تعليمية سعيدة</h1>
         <p>
