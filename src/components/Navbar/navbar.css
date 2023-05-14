@@ -55,16 +55,6 @@ img {
   color: #b1b1b1;
 }
 
-.subjects,
-.drive {
-  color: #f0d500;
-}
-
-.subjects:hover,
-.drive:hover {
-  color: #f8ea80;
-}
-
 .deadline {
   color: #f32013;
   display: flex;

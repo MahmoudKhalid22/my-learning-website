@@ -5,7 +5,7 @@ function OS() {
   const os = deadline_data.filter((e) => e.name === "os");
 
   return (
-    <div className="dsp">
+    <div className="deadline_container">
       <div className="report">
         <h2>{os[0].name}</h2>
         <h3>{os[0].task}</h3>

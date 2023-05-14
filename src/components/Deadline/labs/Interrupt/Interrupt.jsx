@@ -1,32 +1,35 @@
 import React from "react";
 import "./interrupt.css";
+import { deadline_data } from "../../../../data/Data";
+
 function Interrupt() {
+  const interrupt = deadline_data.filter(
+    (e) => e.name === "Interrupt_handling"
+  );
+
   return (
-    <div className="interrupt">
-      <div className="task">
-        <h1>Interrupt</h1>
-        <h3>Task</h3>
+    <div className="deadline_container">
+      <div className="name">
+        <h2>{interrupt[0].name}</h2>
+        <h3>{interrupt[0].task}</h3>
         <p className="info">
-          <p className="one"> pdf المعمل ع الدرايف</p>
+          <p className="one">{interrupt[0].data.one}</p>
           <p className="one">
-            <a
-              href="https://www.youtube.com/playlist?list=PLODeD_CG5z3UBpjDHX5yLdzzfnEnzR-8U"
-              target={"_blank"}
-            >
-              Playlist
+            <a href={interrupt[0].data.two.link} target={"_blank"}>
+              {interrupt[0].data.two.data}
             </a>
           </p>
           <p className="one">
-            <a
-              href="https://github.com/Mahmoud-Ibrahim-93/Interrupt-handling-With-PIC-microController"
-              target={"_blank"}
-            >
-              Github link
+            <a href={interrupt[0].data.three.link} target={"_blank"}>
+              {interrupt[0].data.three.data}
             </a>
           </p>
         </p>
-        <p className="toWhom"></p>
-        <p className="date">الثلاثاء 9/5/2023</p>
+        <p className="toWhom">{interrupt[0].how}</p>
+        <p className="date">
+          {interrupt[0].deadline}
+          {interrupt[0].day}
+        </p>
       </div>
     </div>
   );

@@ -27,14 +27,10 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <a
-            href="https://drive.google.com/open?id=13aGUbeGPWiGNYs_r6mjEk8BXdfF5ufxF&authuser=0"
-            target={"_blank"}
-            className="nav-link quraat"
-          >
+          <Link to={`/farsh`} className="nav-link quraat">
             فرش حروف الإمام عاصم
             <FaBookOpen className="open" />
-          </a>
+          </Link>
         </li>
         <li>
           <a
@@ -77,13 +73,9 @@ function Navbar() {
             </Link>
           </li>
           <li className="farsh">
-            <a
-              href="https://drive.google.com/open?id=13aGUbeGPWiGNYs_r6mjEk8BXdfF5ufxF&authuser=0"
-              className="nav-link quraat"
-              target={"_blank"}
-            >
+            <Link to={`/farsh`} className="nav-link quraat">
               فرش حروف الإمام عاصم
-            </a>
+            </Link>
           </li>
           <li>
             <a

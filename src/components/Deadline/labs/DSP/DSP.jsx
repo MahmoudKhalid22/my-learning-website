@@ -1,55 +1,37 @@
 import React from "react";
 import "./dsp.css";
+import { deadline_data } from "../../../../data/Data";
 
 function DSP() {
+  const dsp = deadline_data.filter((e) => e.name === "DSP_Labs");
   return (
-    <div className="dsp">
-      <div className="report">
-        <h1>DSP</h1>
-        <h3>Task</h3>
+    <div className="deadline_container">
+      <div className="name">
+        <h2>{dsp[0].name}</h2>
+        <h3>{dsp[0].task}</h3>
         <p className="info">
+          <p className="one">{dsp[0].data.one}</p>
+          <p className="one">{dsp[0].data.two}</p>
+          <p className="one">{dsp[0].data.three}</p>
+          <p className="one">{dsp[0].data.four} </p>
+          <p className="one">{dsp[0].data.five}</p>
+          <p className="one">{dsp[0].data.six}</p>
           <p className="one">
-            هيتم تسليم pdf و لنك فيديو مدته في حدود دقيقة سيميوليشن للبرنامج
-            لتوضيح النواتج وسماع الصوت بعد الفلترة
-          </p>
-          <p className="one">
-            الحل فردي كل واحد هيحل لواحده هيحل التاسكات كلها في pdf هيكتب فيه
-            الاكواد والخرج مع عمل الفيديو
-          </p>
-          <p className="one">
-            وهيكون فيه كويز mcq اونلاين هنحدد موعده بعد العيد عشان تتدربوا على
-            طريقة الامتحان
-          </p>
-          <p className="one">
-            درجة المعمل هتكون مقسومة بين تسليم التاسك والكويز
-          </p>
-          <p className="one">
-            الكويز هيكون في حدود الربع ساعة غالبا هيكون في نفس اليوم او قبلها
-            بيوم المعاد اللى تختاروه
-          </p>
-          <p className="one">
-            بالنسبه للناس الي هتستخدم برنامج اوكتيف بدل ماتلاب ف تاسك م/اسامة :
-            هتحتاجو مكتبة signal بس
-          </p>
-          <p className="one">
-            <a
-              href="https://drive.google.com/drive/folders/1Ca8_6kpEf5FO8_MG9FZlMiNerh4xPa62"
-              target={"_blank"}
-            >
-              Data
+            <a href={dsp[0].data.seven.link} target={"_blank"}>
+              {dsp[0].data.seven.data}
             </a>
           </p>
           <p className="one">
-            <a
-              href="https://youtube.com/playlist?list=PLKrTtHfjR9trlURjSVI-EZ3qeguq2bWoZ"
-              target={"_blank"}
-            >
-              playlist
+            <a href={dsp[0].data.eight.link} target={"_blank"}>
+              {dsp[0].data.eight.data}
             </a>
           </p>
         </p>
-        <p className="toWhom">online form</p>
-        <p className="date">الخميس 4/5/2023</p>
+        <p className="toWhom">{dsp[0].how}</p>
+        <p className="date">
+          {dsp[0].deadline}
+          {dsp[0].day}
+        </p>
       </div>
     </div>
   );

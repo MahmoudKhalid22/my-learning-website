@@ -4,7 +4,7 @@ function Communication() {
   const communication = deadline_data.filter((a) => a.name === "communication");
 
   return (
-    <div className="dsp">
+    <div className="deadline_container">
       <div className="report">
         <h2>{communication[0].name}</h2>
         <h3>{communication[0].task}</h3>

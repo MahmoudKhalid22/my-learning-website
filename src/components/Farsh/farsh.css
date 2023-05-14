@@ -1,0 +1,12 @@
+.emdeb-responsive {
+  height: 100vh;
+}
+@media (min-width: 767px) {
+  .emdeb-responsive {
+    margin: 0 6rem;
+  }
+}
+.emdeb-responsive iframe {
+  width: 100%;
+  height: 100%;
+}

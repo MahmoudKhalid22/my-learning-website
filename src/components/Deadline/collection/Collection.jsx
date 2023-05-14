@@ -47,11 +47,11 @@ function Collection() {
         {activeButton === "button1" && <Organization />}
         {activeButton === "button1" && <RamDesign />}
         {activeButton === "button1" && <Embedded />}
+        {activeButton === "button1" && <DSP />}
+        {activeButton === "button1" && <Communication />}
+        {/* {activeButton === "button1" && <OS />} */}
         {/* لم يسلم */}
-        {activeButton === "button2" && <DSP />}
         {activeButton === "button2" && <Interrupt />}
-        {activeButton === "button2" && <Communication />}
-        {activeButton === "button2" && <OS />}
       </div>
     </>
   );

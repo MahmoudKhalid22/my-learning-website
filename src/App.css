@@ -27,3 +27,11 @@ main {
   text-align: center;
   color: #fdfdfd;
 }
+.drive,
+.subjects {
+  color: #fdfdfd;
+}
+.drive:hover,
+.subjects:hover {
+  color: #b1b1b1;
+}
